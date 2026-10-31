@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work — Karuthal Architects</title>
+<meta name="description" content="Projects by Karuthal Architects — residential, commercial, interiors and landscape.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&amp;family=Caveat:wght@500;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F4F1EA;color:#141414;font-family:'Fraunces',Georgia,serif}
+a{color:#141414}a:hover{color:#4a4a4a}
+.mono{font-family:'JetBrains Mono',monospace}
+.wrap{max-width:1360px;margin:0 auto;padding:0 40px}
+@media (max-width:640px){.wrap{padding:0 16px}}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-top:48px;padding-bottom:28px;border-bottom:3px solid #141414}
+.filters button{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;padding:12px 18px;min-height:44px;border:2.5px solid #141414;border-radius:999px;box-shadow:3px 3px 0 #141414;background:transparent;color:#141414;cursor:pointer}
+.filters button[aria-pressed="true"]{background:#141414;color:#F4F1EA}
+.grid{display:flex;flex-wrap:wrap;gap:36px;padding:44px 0 120px}
+.card{flex:1 1 380px;min-width:0;text-decoration:none;border:2.5px solid #141414;box-shadow:7px 7px 0 #141414;background:#FBFAF6;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translate(-2px,-2px);box-shadow:9px 9px 0 #141414}
+.card[hidden]{display:none}
+.photo{position:relative;aspect-ratio:4/3;border-bottom:2.5px solid #141414;background-color:#DCD8CE;background-image:repeating-linear-gradient(45deg,rgba(20,20,20,.07) 0 2px,transparent 2px 12px);overflow:hidden}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.15);mix-blend-mode:multiply}
+.photo .ph{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#F4F1EA;border:2px solid #141414;padding:8px 12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px}
+.sketch{position:absolute;inset:0;background:#FBFAF6;display:flex;align-items:center;justify-content:center;padding:24px;transition:clip-path .7s cubic-bezier(.7,0,.2,1);clip-path:inset(0 0 0 0)}
+.card:hover .sketch,.card:focus-visible .sketch{clip-path:inset(0 100% 0 0)}
+.sketch svg{width:100%;height:auto}
+.meta{padding:20px 24px 24px;display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+@media (prefers-reduced-motion:reduce){.sketch,.card{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs>
+<filter id="wob" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="1" result="n"><animate attributeName="seed" values="1;4;7;3" dur="0.8s" calcMode="discrete" repeatCount="indefinite"></animate></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="3.5"></feDisplacementMap></filter>
+<pattern id="tiles" width="26" height="14" patternUnits="userSpaceOnUse"><path d="M0 14 Q 6.5 1 13 14 Q 19.5 1 26 14" fill="none" stroke="#141414" stroke-width="2"></path></pattern>
+<pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#141414" stroke-width="1.6"></line></pattern>
+<symbol id="d-tower" viewBox="0 0 400 280"><g fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wob)"><line x1="20" y1="250" x2="380" y2="250"/><rect x="140" y="40" width="120" height="160" fill="#FBFAF6"/><rect x="152" y="54" width="22" height="22" fill="#141414"/><rect x="189" y="54" width="22" height="22"/><rect x="226" y="54" width="22" height="22" fill="#141414"/><rect x="152" y="92" width="22" height="22"/><rect x="189" y="92" width="22" height="22" fill="#141414"/><rect x="226" y="92" width="22" height="22"/><rect x="152" y="130" width="22" height="22" fill="#141414"/><rect x="189" y="130" width="22" height="22"/><rect x="226" y="130" width="22" height="22" fill="#141414"/><rect x="96" y="200" width="208" height="50" fill="#FBFAF6"/><rect x="176" y="214" width="48" height="36" fill="#141414"/><line x1="128" y1="32" x2="272" y2="32" stroke-width="5"/><circle cx="336" cy="210" r="28" fill="#FBFAF6"/><line x1="336" y1="238" x2="336" y2="250" stroke-width="5"/></g></symbol>
+<symbol id="d-court" viewBox="0 0 400 280"><g fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wob)"><rect x="60" y="30" width="280" height="220" fill="#141414"/><rect x="74" y="44" width="252" height="192" fill="#FBFAF6" stroke="none"/><rect x="140" y="90" width="120" height="100" fill="url(#hatch)"/><rect x="134" y="84" width="12" height="12" fill="#141414"/><rect x="254" y="84" width="12" height="12" fill="#141414"/><rect x="134" y="184" width="12" height="12" fill="#141414"/><rect x="254" y="184" width="12" height="12" fill="#141414"/><circle cx="200" cy="140" r="24" fill="#FBFAF6"/><circle cx="200" cy="140" r="11" fill="#141414"/><rect x="180" y="236" width="40" height="14" fill="#FBFAF6" stroke="none"/><ellipse cx="104" cy="214" rx="10" ry="7" fill="#141414"/><circle cx="114" cy="206" r="6" fill="#141414"/></g></symbol>
+<symbol id="d-house" viewBox="0 0 400 280"><g fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wob)"><line x1="20" y1="240" x2="380" y2="240" stroke-width="4"/><polygon points="40,150 140,90 240,150" fill="url(#tiles)"/><polygon points="40,150 140,90 240,150"/><line x1="34" y1="152" x2="246" y2="152" stroke-width="5"/><rect x="60" y="152" width="160" height="88" fill="#FBFAF6"/><rect x="80" y="172" width="34" height="68" fill="#141414"/><rect x="134" y="170" width="66" height="44" fill="#141414"/><rect x="220" y="114" width="150" height="54" fill="#FBFAF6"/><rect x="232" y="126" width="126" height="26" fill="#141414"/><rect x="220" y="168" width="150" height="6" fill="#141414"/><rect x="246" y="176" width="94" height="64" fill="#FBFAF6"/><line x1="362" y1="174" x2="362" y2="240" stroke-width="6"/></g></symbol>
+<symbol id="d-interior" viewBox="0 0 400 280"><g fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wob)"><rect x="20" y="20" width="360" height="240" stroke-width="2"/><rect x="120" y="70" width="160" height="120" fill="#FBFAF6"/><line x1="20" y1="20" x2="120" y2="70"/><line x1="380" y1="20" x2="280" y2="70"/><line x1="20" y1="260" x2="120" y2="190"/><line x1="380" y1="260" x2="280" y2="190"/><rect x="140" y="86" width="64" height="80" fill="#141414"/><line x1="250" y1="20" x2="250" y2="96" stroke-width="2"/><path d="M234 112 Q 250 88 266 112 Z" fill="#141414"/><polyline points="160,232 168,200 252,200 260,232"/><path d="M70 230 Q 66 190 80 170 Q 94 190 90 230 Z" fill="#141414"/></g></symbol>
+</defs></svg>
+
+<header>
+<nav aria-label="Primary" class="wrap" style="padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
+<a href="index.html" style="text-decoration:none;font-size:30px;font-weight:700;letter-spacing:-1px;line-height:1">Karuthal<span style="font-family:'Caveat',cursive;font-size:22px;letter-spacing:0;margin-left:8px">architects</span></a>
+<div class="mono" style="display:flex;flex-wrap:wrap;align-items:center;gap:28px;font-size:12px;letter-spacing:1.5px">
+<a href="projects.html" aria-current="page" style="text-underline-offset:6px">WORK</a>
+<a href="#" style="text-decoration:none">STUDIO</a>
+<a href="#" style="text-decoration:none">PROCESS</a>
+<a href="#" style="text-decoration:none;border:2.5px solid #141414;border-radius:999px;padding:12px 20px;box-shadow:4px 4px 0 #141414">SAY HELLO →</a>
+</div>
+</nav>
+</header>
+
+<main class="wrap">
+<p class="mono" style="margin:56px 0 0;font-size:12px;letter-spacing:2px">INDEX OF DRAWINGS — <span id="count">6</span> PROJECTS</p>
+<h1 style="margin:20px 0 0;font-size:clamp(56px,8vw,112px);line-height:.95;letter-spacing:-4px;font-weight:800">Work <span style="font-family:'Caveat',cursive;font-weight:700;font-size:.32em;letter-spacing:0;vertical-align:middle;display:inline-block;transform:rotate(-6deg)">(the good stuff)</span></h1>
+
+<div class="filters" role="group" aria-label="Filter projects">
+<button type="button" data-f="ALL" aria-pressed="true">ALL</button>
+<button type="button" data-f="RESIDENTIAL" aria-pressed="false">RESIDENTIAL</button>
+<button type="button" data-f="COMMERCIAL" aria-pressed="false">COMMERCIAL</button>
+<button type="button" data-f="INTERIORS" aria-pressed="false">INTERIORS</button>
+<button type="button" data-f="LANDSCAPE" aria-pressed="false">LANDSCAPE</button>
+</div>
+
+<div class="grid" id="grid"></div>
+<p id="empty" class="mono" hidden style="margin:0 0 120px;font-size:13px;letter-spacing:1.5px">Nothing here yet — still on the drawing board.</p>
+</main>
+
+<footer class="wrap" style="padding-bottom:48px">
+<div class="mono" style="display:flex;flex-wrap:wrap;border:3px solid #141414;background:#FBFAF6;font-size:12px;letter-spacing:1px">
+<div style="flex:2 1 300px;padding:20px;border-right:3px solid #141414"><div style="font-family:'Fraunces',serif;font-weight:800;font-size:30px;letter-spacing:-1px">Karuthal</div><div style="margin-top:6px">ARCHITECTS · EST. [YEAR]</div></div>
+<div style="flex:1 1 200px;padding:20px;border-right:3px solid #141414"><div style="color:#555">STUDIO</div><div style="margin-top:6px;line-height:1.6">[Street address]<br>[City], Kerala [PIN]</div></div>
+<div style="flex:1 1 200px;padding:20px"><div style="color:#555">SAY HELLO</div><div style="margin-top:6px;line-height:1.6"><a href="#">[email@karuthal.com]</a><br>[+91 phone]</div></div>
+</div>
+</footer>
+
+<script>
+// Project data — replace with CMS data later. Add "photo": "images/xyz.jpg" to show a real photo under the sketch.
+const projects = [
+  { no: '01', cat: 'RESIDENTIAL', name: 'House on the Slope', kind: 'house', photo: '' },
+  { no: '02', cat: 'RESIDENTIAL', name: 'Courtyard House', kind: 'court', photo: '' },
+  { no: '03', cat: 'COMMERCIAL', name: '[Project name] Offices', kind: 'tower', photo: '' },
+  { no: '04', cat: 'INTERIORS', name: '[Project name] Apartment', kind: 'interior', photo: '' },
+  { no: '05', cat: 'COMMERCIAL', name: '[Project name] Clinic', kind: 'tower', photo: '' },
+  { no: '06', cat: 'INTERIORS', name: '[Project name] Café', kind: 'interior', photo: '' }
+];
+const grid = document.getElementById('grid');
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+grid.innerHTML = projects.map(p => `
+<a class="card" href="project.html" data-cat="${p.cat}">
+  <div class="photo">
+    ${p.photo ? `<img src="${esc(p.photo)}" alt="${esc(p.name)}" loading="lazy">` : '<span class="ph">[PROJECT PHOTO]</span>'}
+    <div class="sketch" aria-hidden="true"><svg viewBox="0 0 400 280"><use href="#d-${p.kind}"></use></svg></div>
+  </div>
+  <div class="meta">
+    <div style="min-width:0">
+      <p class="mono" style="margin:0;font-size:11px;letter-spacing:1.5px;color:#444">${p.no} · ${p.cat} · [YEAR]</p>
+      <h2 style="margin:10px 0 0;font-weight:700;font-size:32px;letter-spacing:-1px;line-height:1.1">${esc(p.name)}</h2>
+      <p style="margin:4px 0 0;font-family:'Caveat',cursive;font-size:24px">[Location]</p>
+    </div>
+    <span aria-hidden="true" class="mono" style="font-size:18px">→</span>
+  </div>
+</a>`).join('');
+document.getElementById('count').textContent = projects.length;
+const buttons = document.querySelectorAll('.filters button');
+buttons.forEach(b => b.addEventListener('click', () => {
+  const f = b.dataset.f;
+  buttons.forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  let shown = 0;
+  grid.querySelectorAll('.card').forEach(c => {
+    const on = f === 'ALL' || c.dataset.cat === f;
+    c.hidden = !on; if (on) shown++;
+  });
+  document.getElementById('empty').hidden = shown > 0;
+}));
+</script>
+</body>
+</html>
