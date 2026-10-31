@@ -17,6 +17,8 @@ a{color:#141414}a:hover{color:#4a4a4a}
 @media (max-width:640px){header nav,section,footer{padding-left:16px!important;padding-right:16px!important}}
 @media (prefers-reduced-motion: reduce){.kspin{animation:none}}
 </style>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
 </head>
 <body>
 <div style="background: #F4F1EA; color: #141414; font-family: 'Fraunces', Georgia, serif; min-height: 100vh; overflow: hidden">
@@ -57,11 +59,14 @@ a{color:#141414}a:hover{color:#4a4a4a}
 
 <!-- DRAWING -> BUILDING -->
 <section style="max-width: 1360px; margin: 72px auto 0; padding: 0 40px">
-<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: stretch">
-<div style="flex: 1 1 520px; min-width: 0">
-<p style="margin: 0 0 12px; font-family: 'Caveat', cursive; font-weight: 700; font-size: 28px">how it was drawn…</p>
-<div style="aspect-ratio: 4 / 3; border: 3px solid #141414; background: #FBFAF6; box-shadow: 7px 7px 0 #141414; display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box">
-<svg viewBox="0 0 400 280" role="img" aria-label="Ink elevation drawing of the house" style="width: 100%; height: auto" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#wob)">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px">
+<p style="margin: 0; font-family: 'Caveat', cursive; font-weight: 700; font-size: 32px">how it was drawn ⟷ how it was built</p>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 2px">DRAG THE LINE</p>
+</div>
+<div class="compare" style="--pos: 50%">
+<div class="cmp-photo"><span class="chip">[PHOTO — SAME ANGLE AS THE DRAWING]</span></div>
+<div class="cmp-draw">
+<svg viewBox="0 0 400 280" role="img" aria-label="Ink elevation drawing of the house" preserveAspectRatio="xMidYMid meet" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#wob)">
 <line x1="20" y1="240" x2="380" y2="240" stroke-width="4"></line>
 <polygon points="40,150 140,90 240,150" fill="url(#tiles)"></polygon>
 <polygon points="40,150 140,90 240,150"></polygon>
@@ -79,15 +84,10 @@ a{color:#141414}a:hover{color:#4a4a4a}
 <line x1="216" y1="104" x2="224" y2="96" stroke-width="2"></line><line x1="366" y1="104" x2="374" y2="96" stroke-width="2"></line>
 </g>
 <text x="295" y="92" text-anchor="middle" fill="#141414" stroke="none" style="font-family: 'JetBrains Mono', monospace; font-size: 11px">14 400</text>
-</svg>
 </div>
-</div>
-<div style="flex: 1 1 520px; min-width: 0">
-<p style="margin: 0 0 12px; font-family: 'Caveat', cursive; font-weight: 700; font-size: 28px">…and how it was built</p>
-<div style="position: relative; aspect-ratio: 4 / 3; border: 3px solid #141414; box-shadow: 7px 7px 0 #141414; background-color: #DCD8CE; background-image: repeating-linear-gradient(45deg, rgba(20,20,20,0.07) 0 2px, transparent 2px 12px)">
-<span style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); max-width: 80%; text-align: center; background: #F4F1EA; border: 2px solid #141414; padding: 10px 14px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 2px">[MATCHING PHOTO — SAME ANGLE AS DRAWING]</span>
-</div>
-</div>
+<span class="cmp-tag" style="left: 16px">DRAWING</span><span class="cmp-tag" style="right: 16px">BUILT</span>
+<div class="cmp-handle" aria-hidden="true"><span><svg viewBox="0 0 32 16" width="30" height="15" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="8,2 2,8 8,14"></polyline><polyline points="24,2 30,8 24,14"></polyline><line x1="2" y1="8" x2="30" y2="8"></line></svg></span></div>
+<input type="range" min="0" max="100" value="50" aria-label="Slide between the drawing and the built photo">
 </div>
 </section>
 

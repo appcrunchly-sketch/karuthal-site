@@ -19,6 +19,8 @@ a{color:#141414}a:hover{color:#4a4a4a}
 @media (max-width:640px){header nav,section,footer{padding-left:16px!important;padding-right:16px!important}}
 @media (prefers-reduced-motion: reduce){.kspin{animation:none}}
 </style>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
 </head>
 <body>
 <div style="background: #F4F1EA; color: #141414; font-family: 'Fraunces', Georgia, serif; min-height: 100vh; overflow: hidden">
@@ -50,10 +52,10 @@ a{color:#141414}a:hover{color:#4a4a4a}
 </a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 1.5px">
 <a href="projects.html" style="text-decoration: none">WORK</a>
-<a href="#" style="text-decoration: none">STUDIO</a>
-<a href="#" style="text-decoration: none">PROCESS</a>
+<a href="#studio" style="text-decoration: none">STUDIO</a>
+<a href="#process" style="text-decoration: none">PROCESS</a>
 <a href="#" style="text-decoration: none">JOURNAL</a>
-<a href="#" style="text-decoration: none; border: 2.5px solid #141414; border-radius: 999px; padding: 12px 20px; box-shadow: 4px 4px 0 #141414; background: #F4F1EA">SAY HELLO →</a>
+<a href="#enquiry" style="text-decoration: none; border: 2.5px solid #141414; border-radius: 999px; padding: 12px 20px; box-shadow: 4px 4px 0 #141414; background: #F4F1EA">SAY HELLO →</a>
 </div>
 </nav>
 </header>
@@ -66,26 +68,26 @@ a{color:#141414}a:hover{color:#4a4a4a}
 <h1 style="margin: 0; font-weight: 800; font-size: clamp(60px, 9vw, 138px); line-height: 0.9; letter-spacing: -4px; font-variation-settings: 'opsz' 144">Spaces drawn<br>with <span style="position: relative; display: inline-block; font-style: italic; font-weight: 400">care.<svg viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; left: 0; bottom: -14px; width: 100%; height: 26px" fill="none" stroke="#141414" stroke-width="5" stroke-linecap="round"><path d="M4 18 C 60 6, 140 4, 296 14 M 30 26 C 110 16, 200 16, 270 22" filter="url(#wobStill)"></path></svg></span></h1>
 </div>
 <div style="flex: 0 1 380px; display: flex; flex-direction: column; gap: 24px; align-items: flex-start">
-<p style="margin: 0; font-size: 19px; line-height: 1.55; font-weight: 400">Karuthal means care. We draw homes, workplaces and interiors line by line — and we never stop drawing until it's right.</p>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; font-weight: 400">Karuthal — <span lang="ml" class="ml">കരുതൽ</span> — means care. We draw homes, workplaces and interiors line by line — and we never stop drawing until it's right.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 14px">
 <a href="projects.html" style="text-decoration: none; background: #141414; color: #F4F1EA; border: 2.5px solid #141414; border-radius: 999px; padding: 15px 24px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 2px; box-shadow: 4px 4px 0 #8a8a8a">SEE THE WORK</a>
-<a href="#" style="text-decoration: none; border: 2.5px solid #141414; border-radius: 999px; padding: 15px 24px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 2px; box-shadow: 4px 4px 0 #141414">HOW WE WORK</a>
+<a href="#process" style="text-decoration: none; border: 2.5px solid #141414; border-radius: 999px; padding: 15px 24px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 2px; box-shadow: 4px 4px 0 #141414">HOW WE WORK</a>
 </div>
 </div>
 </div>
 
 <!-- HERO ILLUSTRATION -->
 <figure style="margin: 40px 0 0; position: relative">
-<svg viewBox="0 0 1280 640" role="img" aria-label="Cartoon ink drawing of a Kerala home with a tiled sloping roof and a cantilevered glass studio. An architect leans out of the window saying measure twice; a family, a cat, a coconut palm, clouds and birds around it." style="width: 100%; height: auto; display: block" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<svg id="hero-art" viewBox="0 0 1280 640" role="img" aria-label="Cartoon ink drawing of a Kerala home with a tiled sloping roof and a cantilevered glass studio. An architect leans out of the window saying measure twice; a family, a cat, a coconut palm, clouds and birds around it." style="width: 100%; height: auto; display: block" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
 <g filter="url(#wob)">
 <!-- sky -->
-<path d="M150 130 q -30 0 -30 -24 q 0 -26 30 -24 q 10 -26 44 -18 q 26 -16 48 6 q 32 -2 30 28 q 0 32 -32 32 z" fill="#F4F1EA"></path>
-<path d="M770 90 q -24 0 -24 -18 q 0 -20 24 -18 q 8 -20 34 -14 q 20 -12 38 4 q 26 -2 24 22 q 0 24 -26 24 z" fill="#F4F1EA"></path>
-<circle cx="1206" cy="82" r="34" fill="#F4F1EA"></circle>
+<path class="drift" d="M150 130 q -30 0 -30 -24 q 0 -26 30 -24 q 10 -26 44 -18 q 26 -16 48 6 q 32 -2 30 28 q 0 32 -32 32 z" fill="#F4F1EA"></path>
+<path class="drift d2" d="M770 90 q -24 0 -24 -18 q 0 -20 24 -18 q 8 -20 34 -14 q 20 -12 38 4 q 26 -2 24 22 q 0 24 -26 24 z" fill="#F4F1EA"></path>
+<g transform="translate(-150 -30)"><circle cx="1206" cy="82" r="34" fill="#F4F1EA"></circle>
 <line x1="1206" y1="30" x2="1206" y2="14"></line><line x1="1258" y1="82" x2="1274" y2="82"></line><line x1="1154" y1="82" x2="1138" y2="82"></line><line x1="1243" y1="45" x2="1255" y2="33"></line><line x1="1169" y1="45" x2="1157" y2="33"></line><line x1="1243" y1="119" x2="1255" y2="131"></line><line x1="1169" y1="119" x2="1157" y2="131"></line>
-<path d="M1196 78 q 3 -4 6 0 M1210 78 q 3 -4 6 0 M1196 92 q 10 8 20 0" stroke-width="2.5"></path>
-<path d="M620 130 q 8 -9 16 0 q 8 -9 16 0" stroke-width="2.5"></path>
-<path d="M664 108 q 6 -7 12 0 q 6 -7 12 0" stroke-width="2.5"></path>
+<path d="M1196 78 q 3 -4 6 0 M1210 78 q 3 -4 6 0 M1196 92 q 10 8 20 0" stroke-width="2.5"></path></g>
+<path class="fly" d="M620 130 q 8 -9 16 0 q 8 -9 16 0" stroke-width="2.5"></path>
+<path class="fly fly2" d="M664 108 q 6 -7 12 0 q 6 -7 12 0" stroke-width="2.5"></path>
 <!-- palm -->
 <path d="M110 540 C 116 450, 96 360, 92 250" stroke-width="13"></path>
 <line x1="105" y1="500" x2="119" y2="498" stroke="#F4F1EA" stroke-width="2.5"></line>
@@ -94,12 +96,12 @@ a{color:#141414}a:hover{color:#4a4a4a}
 <line x1="93" y1="380" x2="107" y2="378" stroke="#F4F1EA" stroke-width="2.5"></line>
 <line x1="90" y1="340" x2="104" y2="338" stroke="#F4F1EA" stroke-width="2.5"></line>
 <line x1="87" y1="300" x2="101" y2="298" stroke="#F4F1EA" stroke-width="2.5"></line>
-<path d="M92 250 Q 50 214 6 246 Q 52 232 92 250 Z" fill="#141414"></path>
+<g class="sway"><path d="M92 250 Q 50 214 6 246 Q 52 232 92 250 Z" fill="#141414"></path>
 <path d="M92 250 Q 70 196 30 186 Q 64 212 92 250 Z" fill="#141414"></path>
 <path d="M92 250 Q 110 196 150 186 Q 116 214 92 250 Z" fill="#141414"></path>
 <path d="M92 250 Q 140 216 186 250 Q 138 236 92 250 Z" fill="#141414"></path>
 <path d="M92 250 Q 96 196 80 166 Q 106 202 92 250 Z" fill="#141414"></path>
-<circle cx="84" cy="262" r="8" fill="#F4F1EA"></circle><circle cx="100" cy="264" r="8" fill="#F4F1EA"></circle><circle cx="92" cy="274" r="8" fill="#F4F1EA"></circle>
+<circle cx="84" cy="262" r="8" fill="#F4F1EA"></circle><circle cx="100" cy="264" r="8" fill="#F4F1EA"></circle><circle cx="92" cy="274" r="8" fill="#F4F1EA"></circle></g>
 <!-- house -->
 <rect x="200" y="304" width="460" height="236" fill="#F4F1EA"></rect>
 <polygon points="160,300 420,150 700,300" fill="url(#tiles)"></polygon>
@@ -114,7 +116,7 @@ a{color:#141414}a:hover{color:#4a4a4a}
 <line x1="402" y1="360" x2="402" y2="470" stroke="#F4F1EA" stroke-width="3"></line><line x1="424" y1="360" x2="424" y2="470" stroke="#F4F1EA" stroke-width="3"></line><line x1="446" y1="360" x2="446" y2="470" stroke="#F4F1EA" stroke-width="3"></line><line x1="468" y1="360" x2="468" y2="470" stroke="#F4F1EA" stroke-width="3"></line><line x1="490" y1="360" x2="490" y2="470" stroke="#F4F1EA" stroke-width="3"></line><line x1="512" y1="360" x2="512" y2="470" stroke="#F4F1EA" stroke-width="3"></line><line x1="534" y1="360" x2="534" y2="470" stroke="#F4F1EA" stroke-width="3"></line><line x1="556" y1="360" x2="556" y2="470" stroke="#F4F1EA" stroke-width="3"></line><line x1="578" y1="360" x2="578" y2="470" stroke="#F4F1EA" stroke-width="3"></line>
 <line x1="368" y1="476" x2="612" y2="476" stroke-width="6"></line>
 <!-- cat -->
-<path d="M350 528 Q 326 520 336 498" stroke-width="5"></path>
+<path class="tail" d="M350 528 Q 326 520 336 498" stroke-width="5"></path>
 <ellipse cx="372" cy="526" rx="22" ry="14" fill="#141414"></ellipse>
 <circle cx="392" cy="508" r="12" fill="#141414"></circle>
 <polygon points="382,502 383,489 391,498" fill="#141414"></polygon><polygon points="394,498 401,488 403,503" fill="#141414"></polygon>
@@ -133,8 +135,8 @@ a{color:#141414}a:hover{color:#4a4a4a}
 <path d="M911 258 Q 912 238 930 240 Q 948 240 945 258 Q 934 248 911 258 Z" fill="#141414" stroke-width="2"></path>
 <circle cx="921" cy="264" r="5.5" stroke-width="2"></circle><circle cx="935" cy="264" r="5.5" stroke-width="2"></circle><line x1="926" y1="264" x2="930" y2="264" stroke-width="2"></line>
 <path d="M921 274 Q 928 280 935 274" stroke-width="2"></path>
-<line x1="948" y1="294" x2="996" y2="270" stroke-width="7"></line>
-<g transform="rotate(-24 1014 262)"><rect x="990" y="254" width="50" height="16" fill="#F4F1EA" stroke-width="2.5"></rect><ellipse cx="1040" cy="262" rx="4" ry="8" fill="#F4F1EA" stroke-width="2.5"></ellipse></g>
+<g class="wave"><line x1="948" y1="294" x2="996" y2="270" stroke-width="7"></line>
+<g transform="rotate(-24 1014 262)"><rect x="990" y="254" width="50" height="16" fill="#F4F1EA" stroke-width="2.5"></rect><ellipse cx="1040" cy="262" rx="4" ry="8" fill="#F4F1EA" stroke-width="2.5"></ellipse></g></g>
 <path d="M975 112 H1095 Q1115 112 1115 132 V154 Q1115 174 1095 174 H1000 L962 214 L978 174 Q955 174 955 154 V132 Q955 112 975 112 Z" fill="#F4F1EA" stroke-width="2.5"></path>
 <!-- underside -->
 <rect x="640" y="340" width="520" height="16" fill="#141414"></rect>
@@ -156,8 +158,8 @@ a{color:#141414}a:hover{color:#4a4a4a}
 <path d="M866 482 Q 872 470 880 482" stroke-width="2.5"></path>
 <path d="M862 502 L882 502 L885 524 L859 524 Z" fill="#F4F1EA" stroke-width="2.5"></path>
 <line x1="866" y1="524" x2="866" y2="540"></line><line x1="878" y1="524" x2="878" y2="540"></line>
-<path d="M882 506 Q 902 470 896 430" stroke-width="1.6"></path>
-<circle cx="896" cy="414" r="16" fill="#141414"></circle>
+<g class="bob"><path d="M882 506 Q 902 470 896 430" stroke-width="1.6"></path>
+<circle cx="896" cy="414" r="16" fill="#141414"></circle></g>
 <!-- ground -->
 <line x1="0" y1="540" x2="1280" y2="540" stroke-width="4"></line>
 <rect x="0" y="542" width="1280" height="20" fill="url(#hatch)" stroke="none"></rect>
@@ -180,10 +182,10 @@ a{color:#141414}a:hover{color:#4a4a4a}
 </g>
 </svg>
 <!-- rotating stamp -->
-<svg viewBox="0 0 200 200" aria-hidden="true" style="position: absolute; right: 2%; top: -40px; width: 140px; height: 140px" fill="none" stroke="#141414" stroke-width="2.5">
+<svg class="stamp" viewBox="0 0 200 200" aria-hidden="true" style="position: absolute; right: 2%; top: -40px; width: 140px; height: 140px" fill="none" stroke="#141414" stroke-width="2.5">
 <defs><path id="ring" d="M100 100 m -74 0 a 74 74 0 1 1 148 0 a 74 74 0 1 1 -148 0"></path></defs>
 <g class="kspin"><circle cx="100" cy="100" r="94" fill="#F4F1EA"></circle><circle cx="100" cy="100" r="58"></circle>
-<text fill="#141414" stroke="none" style="font-family: 'JetBrains Mono', monospace; font-size: 15px; letter-spacing: 3.6px"><textPath href="#ring">KARUTHAL · ARCHITECTS · EST. [YEAR] ·</textPath></text></g>
+<text fill="#141414" stroke="none" style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; letter-spacing: 2.2px"><textPath href="#ring">KARUTHAL · <tspan class="ml">കരുതൽ</tspan> · ARCHITECTS · EST. [YEAR] ·</textPath></text></g>
 <polyline points="72,104 100,80 128,104"></polyline><rect x="80" y="104" width="40" height="26" fill="#141414"></rect>
 </svg>
 </figure>
@@ -342,7 +344,7 @@ a{color:#141414}a:hover{color:#4a4a4a}
 </section>
 
 <!-- PROCESS as comic strip -->
-<section style="max-width: 1360px; margin: 160px auto 0; padding: 0 40px">
+<section id="process" style="max-width: 1360px; margin: 160px auto 0; padding: 0 40px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 16px">
 <h2 style="margin: 0; font-weight: 800; font-size: clamp(52px, 6vw, 84px); letter-spacing: -3px; font-variation-settings: 'opsz' 144">How a house happens</h2>
 <p style="margin: 0; font-family: 'Caveat', cursive; font-weight: 700; font-size: 28px">a short comic in four panels</p>
@@ -449,11 +451,110 @@ a{color:#141414}a:hover{color:#4a4a4a}
 </div>
 </section>
 
+<!-- STUDIO / TEAM: cartoon on top, real photo on hover or tap -->
+<section id="studio" style="max-width: 1360px; margin: 160px auto 0; padding: 0 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 16px">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(52px, 6vw, 84px); letter-spacing: -3px; line-height: 0.95; font-variation-settings: 'opsz' 144">The people behind the pencils</h2>
+<p style="margin: 0; font-family: 'Caveat', cursive; font-weight: 700; font-size: 28px">hover (or tap) to meet them for real</p>
+</div>
+<div class="team">
+
+<div class="member" tabindex="0" aria-label="[Founder name], principal architect — show photo">
+<div class="frame">
+<div class="real hatchbg"><span class="chip">[FOUNDER PHOTO]</span></div>
+<div class="toon"><svg viewBox="0 0 200 220" aria-hidden="true" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#wobStill)">
+<path d="M26 222 Q 30 162 100 158 Q 170 162 174 222 Z" fill="#FBFAF6"></path>
+<path d="M84 160 L100 184 L116 160" stroke-width="2.5"></path>
+<line x1="100" y1="184" x2="100" y2="222" stroke-width="2"></line>
+<circle cx="132" cy="196" r="3" fill="#141414" stroke="none"></circle>
+<rect x="88" y="138" width="24" height="22" fill="#FBFAF6"></rect>
+<circle cx="48" cy="100" r="9" fill="#FBFAF6"></circle><circle cx="152" cy="100" r="9" fill="#FBFAF6"></circle>
+<circle cx="100" cy="96" r="52" fill="#FBFAF6"></circle>
+<path d="M50 88 Q 54 40 100 40 Q 146 40 150 88 Q 140 64 100 62 Q 60 64 50 88 Z" fill="url(#hatch)"></path>
+<circle cx="80" cy="98" r="13" stroke-width="2.5"></circle><circle cx="120" cy="98" r="13" stroke-width="2.5"></circle><line x1="93" y1="98" x2="107" y2="98" stroke-width="2.5"></line>
+<circle cx="80" cy="99" r="3.5" fill="#141414" stroke="none"></circle><circle cx="120" cy="99" r="3.5" fill="#141414" stroke="none"></circle>
+<path d="M78 122 Q 100 110 122 122 Q 112 130 100 124 Q 88 130 78 122 Z" fill="#141414" stroke-width="2"></path>
+<path d="M90 136 Q 100 142 110 136" stroke-width="2.5"></path>
+</g></svg></div>
+</div>
+<h3>[Founder name]</h3>
+<p class="role">PRINCIPAL ARCHITECT</p>
+<p class="fact">[still drafts every first sketch by hand]</p>
+</div>
+
+<div class="member" tabindex="0" aria-label="[Name], architect — show photo">
+<div class="frame">
+<div class="real hatchbg"><span class="chip">[TEAM PHOTO]</span></div>
+<div class="toon"><svg viewBox="0 0 200 220" aria-hidden="true" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#wobStill)">
+<path d="M26 222 Q 30 162 100 158 Q 170 162 174 222 Z" fill="#141414"></path>
+<rect x="88" y="138" width="24" height="22" fill="#FBFAF6"></rect>
+<line x1="80" y1="18" x2="124" y2="48" stroke-width="5"></line>
+<circle cx="100" cy="36" r="19" fill="#141414"></circle>
+<circle cx="48" cy="102" r="9" fill="#FBFAF6"></circle><circle cx="152" cy="102" r="9" fill="#FBFAF6"></circle>
+<circle cx="100" cy="98" r="52" fill="#FBFAF6"></circle>
+<path d="M48 100 Q 44 44 100 42 Q 156 44 152 100 Q 142 64 100 64 Q 58 64 48 100 Z" fill="#141414"></path>
+<circle cx="100" cy="80" r="2.6" fill="#141414" stroke="none"></circle>
+<path d="M76 98 Q 82 92 88 98 M112 98 Q 118 92 124 98" stroke-width="3"></path>
+<path d="M86 124 Q 100 136 114 124" stroke-width="3"></path>
+<path d="M44 114 L48 128 L52 114 Z" fill="#141414" stroke-width="2"></path><path d="M148 114 L152 128 L156 114 Z" fill="#141414" stroke-width="2"></path>
+</g></svg></div>
+</div>
+<h3>[Name]</h3>
+<p class="role">ARCHITECT</p>
+<p class="fact">[keeps a pencil in her hair at all times]</p>
+</div>
+
+<div class="member" tabindex="0" aria-label="[Name], interior designer — show photo">
+<div class="frame">
+<div class="real hatchbg"><span class="chip">[TEAM PHOTO]</span></div>
+<div class="toon"><svg viewBox="0 0 200 220" aria-hidden="true" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#wobStill)">
+<path d="M26 222 Q 30 162 100 158 Q 170 162 174 222 Z" fill="#FBFAF6"></path>
+<line x1="44" y1="190" x2="156" y2="190" stroke-width="2"></line><line x1="36" y1="206" x2="164" y2="206" stroke-width="2"></line>
+<path d="M70 164 Q 66 196 74 222 M130 164 Q 134 196 126 222" stroke-width="4"></path>
+<rect x="88" y="138" width="24" height="22" fill="#FBFAF6"></rect>
+<circle cx="48" cy="100" r="9" fill="#FBFAF6"></circle><circle cx="152" cy="100" r="9" fill="#FBFAF6"></circle>
+<circle cx="100" cy="96" r="52" fill="#FBFAF6"></circle>
+<path d="M50 82 L58 50 L70 62 L80 42 L92 58 L104 38 L114 56 L128 44 L134 62 L148 54 L150 84 Q 100 64 50 82 Z" fill="#141414"></path>
+<path d="M52 104 Q 56 152 100 154 Q 144 152 148 104 Q 136 128 100 130 Q 64 128 52 104 Z" fill="#141414"></path>
+<circle cx="82" cy="98" r="4" fill="#141414" stroke="none"></circle><circle cx="118" cy="98" r="4" fill="#141414" stroke="none"></circle>
+<path d="M88 136 Q 100 144 112 136" stroke="#FBFAF6" stroke-width="3"></path>
+</g></svg></div>
+</div>
+<h3>[Name]</h3>
+<p class="role">INTERIOR DESIGNER</p>
+<p class="fact">[owns a measuring tape for every room]</p>
+</div>
+
+<div class="member" tabindex="0" aria-label="[Name], site engineer — show photo">
+<div class="frame">
+<div class="real hatchbg"><span class="chip">[TEAM PHOTO]</span></div>
+<div class="toon"><svg viewBox="0 0 200 220" aria-hidden="true" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#wobStill)">
+<path d="M26 222 Q 30 162 100 158 Q 170 162 174 222 Z" fill="#141414"></path>
+<line x1="40" y1="192" x2="160" y2="192" stroke="#FBFAF6" stroke-width="5"></line><line x1="32" y1="208" x2="168" y2="208" stroke="#FBFAF6" stroke-width="5"></line>
+<rect x="88" y="138" width="24" height="22" fill="#FBFAF6"></rect>
+<circle cx="48" cy="102" r="9" fill="#FBFAF6"></circle><circle cx="152" cy="102" r="9" fill="#FBFAF6"></circle>
+<circle cx="100" cy="98" r="52" fill="#FBFAF6"></circle>
+<path d="M50 84 Q 44 122 56 138 L 66 138 Q 58 112 62 86 Z" fill="#141414"></path><path d="M150 84 Q 156 122 144 138 L 134 138 Q 142 112 138 86 Z" fill="#141414"></path>
+<path d="M44 82 Q 48 30 100 30 Q 152 30 156 82 Z" fill="#FBFAF6"></path>
+<line x1="32" y1="82" x2="168" y2="82" stroke-width="7"></line><line x1="100" y1="30" x2="100" y2="82" stroke-width="2.5"></line>
+<circle cx="82" cy="104" r="4" fill="#141414" stroke="none"></circle><circle cx="118" cy="104" r="4" fill="#141414" stroke="none"></circle>
+<path d="M84 122 Q 100 140 116 122 Z" fill="#141414" stroke-width="2.5"></path>
+</g></svg></div>
+</div>
+<h3>[Name]</h3>
+<p class="role">SITE ENGINEER</p>
+<p class="fact">[has stood on every roof we've built]</p>
+</div>
+
+</div>
+</section>
+
 <!-- MONSOON QUOTE BAND -->
 <section style="margin-top: 160px; background: #141414; color: #F4F1EA">
 <div style="max-width: 1360px; margin: 0 auto; padding: 110px 40px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
 <svg viewBox="0 0 300 300" aria-hidden="true" style="flex: 0 0 280px; width: 280px; height: auto" fill="none" stroke="#F4F1EA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#wob)">
-<path d="M30 40 l -8 20 M70 20 l -8 20 M110 50 l -8 20 M150 14 l -8 20 M190 44 l -8 20 M230 18 l -8 20 M270 48 l -8 20 M50 90 l -8 20 M250 96 l -8 20 M20 130 l -8 20 M290 140 l -8 20" stroke-width="2.5"></path>
+<path class="rain" d="M30 40 l -8 20 M70 20 l -8 20 M110 50 l -8 20 M150 14 l -8 20 M190 44 l -8 20 M230 18 l -8 20 M270 48 l -8 20 M50 90 l -8 20 M250 96 l -8 20 M20 130 l -8 20 M290 140 l -8 20" stroke-width="2.5"></path>
+<path class="rain r2" transform="translate(14 34)" d="M30 40 l -8 20 M70 20 l -8 20 M110 50 l -8 20 M150 14 l -8 20 M190 44 l -8 20 M230 18 l -8 20 M270 48 l -8 20 M50 90 l -8 20 M250 96 l -8 20 M20 130 l -8 20 M290 140 l -8 20" stroke-width="2.5"></path>
 <polyline points="40,170 150,96 260,170"></polyline>
 <line x1="30" y1="174" x2="270" y2="174" stroke-width="5"></line>
 <rect x="64" y="174" width="172" height="90"></rect>
@@ -472,13 +573,100 @@ a{color:#141414}a:hover{color:#4a4a4a}
 </div>
 </section>
 
+<!-- SKETCH YOUR DREAM HOME -->
+<section id="dream" style="max-width: 1360px; margin: 150px auto 0; padding: 0 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 16px">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(52px, 6vw, 84px); letter-spacing: -3px; line-height: 0.95; font-variation-settings: 'opsz' 144">Sketch your dream home</h2>
+<p style="margin: 0; font-family: 'Caveat', cursive; font-weight: 700; font-size: 28px">go on, play — we'll take it from here</p>
+</div>
+<div class="builder">
+<div class="builder-art">
+<svg id="dream-svg" viewBox="0 0 600 400" role="img" aria-label="Live sketch of the home you are designing" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#wobStill)">
+<line x1="20" y1="340" x2="580" y2="340" stroke-width="4"></line>
+<rect x="20" y="342" width="560" height="18" fill="url(#hatch)" stroke="none"></rect>
+<g class="o court-yes">
+<rect x="480" y="30" width="100" height="100" fill="#141414"></rect>
+<rect x="490" y="40" width="80" height="80" fill="#FBFAF6" stroke="none"></rect>
+<rect x="515" y="65" width="30" height="30" fill="url(#hatch)" stroke-width="2"></rect>
+<circle cx="530" cy="80" r="9" fill="#FBFAF6" stroke-width="2"></circle>
+</g>
+<rect x="170" y="200" width="260" height="140" fill="#FBFAF6"></rect>
+<rect x="280" y="262" width="40" height="78" fill="#141414"></rect>
+<circle cx="312" cy="302" r="3" fill="#FBFAF6" stroke="none"></circle>
+<g class="o win-jali">
+<rect x="190" y="236" width="70" height="56" fill="url(#hatch)"></rect>
+<rect x="340" y="236" width="70" height="56" fill="url(#hatch)"></rect>
+<line x1="186" y1="296" x2="264" y2="296" stroke-width="5"></line><line x1="336" y1="296" x2="414" y2="296" stroke-width="5"></line>
+</g>
+<g class="o win-glass">
+<rect x="184" y="222" width="84" height="82" fill="#141414"></rect>
+<rect x="332" y="222" width="84" height="82" fill="#141414"></rect>
+<line x1="196" y1="292" x2="222" y2="236" stroke="#FBFAF6" stroke-width="3"></line>
+<line x1="344" y1="292" x2="370" y2="236" stroke="#FBFAF6" stroke-width="3"></line>
+</g>
+<g class="o roof-sloped">
+<polygon points="140,200 300,96 460,200" fill="url(#tiles)"></polygon>
+<polygon points="140,200 300,96 460,200"></polygon>
+<line x1="128" y1="202" x2="472" y2="202" stroke-width="7"></line>
+</g>
+<g class="o roof-flat">
+<rect x="158" y="180" width="284" height="22" fill="#141414"></rect>
+<line x1="166" y1="150" x2="434" y2="150"></line>
+<line x1="176" y1="150" x2="176" y2="180" stroke-width="2"></line><line x1="236" y1="150" x2="236" y2="180" stroke-width="2"></line><line x1="296" y1="150" x2="296" y2="180" stroke-width="2"></line><line x1="356" y1="150" x2="356" y2="180" stroke-width="2"></line><line x1="424" y1="150" x2="424" y2="180" stroke-width="2"></line>
+<path d="M392 180 L396 160 L416 160 L420 180 Z" fill="#FBFAF6"></path>
+<path d="M406 160 Q 396 136 386 140 M406 160 Q 408 132 420 130 M406 160 Q 420 144 428 150" stroke-width="2.5"></path>
+</g>
+<g class="o roof-butterfly">
+<polygon points="146,138 300,184 454,138 454,202 146,202" fill="#FBFAF6"></polygon>
+<polyline points="138,134 300,184 462,134" stroke-width="7"></polyline>
+<line x1="300" y1="184" x2="300" y2="202" stroke-width="2"></line>
+<path d="M300 204 q -4 10 0 16 q 4 6 0 12" stroke-width="2" stroke-dasharray="4 5"></path>
+</g>
+<g class="o ver-yes">
+<line x1="104" y1="250" x2="496" y2="250" stroke-width="7"></line>
+<line x1="124" y1="254" x2="124" y2="340" stroke-width="7"></line><line x1="476" y1="254" x2="476" y2="340" stroke-width="7"></line>
+<polyline points="138,340 146,306 176,300 186,340"></polyline><line x1="146" y1="318" x2="182" y2="316" stroke-width="2.5"></line>
+<path d="M256 340 h 88" stroke-width="5"></path>
+</g>
+<path d="M326 336 Q 312 330 318 316" stroke-width="4"></path>
+<ellipse cx="342" cy="332" rx="15" ry="9" fill="#141414"></ellipse>
+<circle cx="358" cy="320" r="8" fill="#141414"></circle>
+<polygon points="352,315 353,305 359,312" fill="#141414"></polygon><polygon points="361,312 367,304 368,316" fill="#141414"></polygon>
+</g>
+<g class="o court-yes" fill="#141414" stroke="none" style="font-family: 'Caveat', cursive; font-weight: 700"><text x="530" y="156" text-anchor="middle" font-size="22">courtyard!</text></g>
+</svg>
+</div>
+<form id="dream-form" class="builder-ctl">
+<fieldset class="opt-group"><legend>ROOF</legend><div class="row">
+<label><input type="radio" name="roof" value="sloped" checked><span>Sloping tiles</span></label>
+<label><input type="radio" name="roof" value="flat"><span>Flat terrace</span></label>
+<label><input type="radio" name="roof" value="butterfly"><span>Butterfly</span></label>
+</div></fieldset>
+<fieldset class="opt-group"><legend>VERANDAH</legend><div class="row">
+<label><input type="radio" name="verandah" value="yes" checked><span>Sit-out verandah</span></label>
+<label><input type="radio" name="verandah" value="no"><span>No verandah</span></label>
+</div></fieldset>
+<fieldset class="opt-group"><legend>COURTYARD</legend><div class="row">
+<label><input type="radio" name="courtyard" value="yes"><span>Nadumuttam</span></label>
+<label><input type="radio" name="courtyard" value="no" checked><span>No courtyard</span></label>
+</div></fieldset>
+<fieldset class="opt-group"><legend>WINDOWS</legend><div class="row">
+<label><input type="radio" name="windows" value="jali" checked><span>Laterite jali</span></label>
+<label><input type="radio" name="windows" value="glass"><span>Big glass</span></label>
+</div></fieldset>
+<p id="dream-summary" class="dream-summary" aria-live="polite"></p>
+<button type="submit" class="btn-ink">SEND THIS SKETCH TO THE STUDIO →</button>
+</form>
+</div>
+</section>
+
 <!-- CONTACT -->
 <section style="max-width: 1360px; margin: 0 auto; padding: 110px 40px 70px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 40px">
 <div style="flex: 1 1 520px; min-width: 0">
 <h2 style="margin: 0; font-weight: 800; font-size: clamp(60px, 8vw, 120px); line-height: 0.9; letter-spacing: -4px; font-variation-settings: 'opsz' 144">Got an empty plot?</h2>
 <p style="margin: 22px 0 0; font-size: 20px; line-height: 1.5; max-width: 480px">Tell us about the site. We'll bring the chai and the pencils.</p>
-<a href="#" style="display: inline-block; margin-top: 32px; text-decoration: none; background: #141414; color: #F4F1EA; border: 2.5px solid #141414; border-radius: 999px; padding: 18px 30px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; box-shadow: 5px 5px 0 #8a8a8a">START A PROJECT →</a>
+<a href="#enquiry" style="display: inline-block; margin-top: 32px; text-decoration: none; background: #141414; color: #F4F1EA; border: 2.5px solid #141414; border-radius: 999px; padding: 18px 30px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; box-shadow: 5px 5px 0 #8a8a8a">START A PROJECT →</a>
 </div>
 <svg viewBox="0 0 600 280" role="img" aria-label="Cartoon of an empty plot with a dashed outline of a future house and a signpost reading your home here" style="flex: 1 1 420px; min-width: 0; height: auto" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#wob)">
 <line x1="10" y1="240" x2="590" y2="240" stroke-width="4"></line>
@@ -494,6 +682,23 @@ a{color:#141414}a:hover{color:#4a4a4a}
 <g fill="#141414" stroke="none" style="font-family: 'Caveat', cursive; font-weight: 700"><text x="475" y="122" text-anchor="middle" font-size="24" transform="rotate(-4 475 127)">YOUR HOME</text><text x="475" y="146" text-anchor="middle" font-size="24" transform="rotate(-4 475 127)">HERE →</text></g>
 </svg>
 </div>
+</section>
+
+<!-- ENQUIRY FORM -->
+<section id="enquiry" style="max-width: 1360px; margin: 0 auto; padding: 20px 40px 90px">
+<form id="enq-form" class="enq">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(36px, 4vw, 52px); letter-spacing: -2px">Tell us about your site</h2>
+<p style="margin: 8px 0 0; font-family: 'Caveat', cursive; font-weight: 700; font-size: 24px">we reply within [2 working days], usually with questions about the light</p>
+<div class="fields">
+<div class="f"><label for="enq-name">YOUR NAME</label><input id="enq-name" name="name" autocomplete="name" required></div>
+<div class="f"><label for="enq-phone">PHONE</label><input id="enq-phone" name="phone" type="tel" autocomplete="tel"></div>
+<div class="f"><label for="enq-email">EMAIL</label><input id="enq-email" name="email" type="email" autocomplete="email"></div>
+<div class="f"><label for="enq-plot">WHERE IS THE PLOT?</label><input id="enq-plot" name="plot"></div>
+<div class="f wide"><label for="enq-msg">WHAT ARE YOU DREAMING OF?</label><textarea id="enq-msg" name="message"></textarea></div>
+</div>
+<div style="margin-top: 26px"><button type="submit" class="btn-ink">SEND →</button></div>
+<p class="status" aria-live="polite"></p>
+</form>
 </section>
 
 <!-- FOOTER -->
